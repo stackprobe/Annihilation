@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ArtificialInnocence.Core/ArtificialInnocence.Core.csproj" />
+    <PackageReference Include="Raylib-cs" Version="8.1.0" />
+  </ItemGroup>
+</Project>
