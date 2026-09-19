@@ -1,7 +1,7 @@
 using System.Numerics;
-using ArtificialInnocence.Core;
+using Annihilation.Core;
 
-namespace ArtificialInnocence.Game;
+namespace Annihilation.Game;
 
 // An input-only pilot for hidden rendering smoke tests. It never changes game state or entities.
 internal static class SmokePilot

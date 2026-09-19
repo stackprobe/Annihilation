@@ -3,6 +3,6 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="../../src/ArtificialInnocence.Core/ArtificialInnocence.Core.csproj" />
+    <ProjectReference Include="../../src/Annihilation.Core/Annihilation.Core.csproj" />
   </ItemGroup>
 </Project>

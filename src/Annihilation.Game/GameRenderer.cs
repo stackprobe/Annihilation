@@ -1,8 +1,8 @@
 using System.Numerics;
 using Raylib_cs;
-using ArtificialInnocence.Core;
+using Annihilation.Core;
 
-namespace ArtificialInnocence.Game;
+namespace Annihilation.Game;
 
 internal sealed class GameRenderer
 {

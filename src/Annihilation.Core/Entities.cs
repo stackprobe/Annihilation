@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace ArtificialInnocence.Core;
+namespace Annihilation.Core;
 
 public enum GameState { Title, Playing, Paused, GameOver, StageClear }
 public enum EnemyKind { Scout, Striker, Hunter, Prism, Boss }

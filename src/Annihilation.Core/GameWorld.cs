@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace ArtificialInnocence.Core;
+namespace Annihilation.Core;
 
 // Deterministic gameplay, independent of raylib and the rendering frame rate.
 public sealed partial class GameWorld

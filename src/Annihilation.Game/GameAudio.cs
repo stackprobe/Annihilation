@@ -1,8 +1,8 @@
 using System.Text;
-using ArtificialInnocence.Core;
+using Annihilation.Core;
 using Raylib_cs;
 
-namespace ArtificialInnocence.Game;
+namespace Annihilation.Game;
 
 // Small, original PCM effects keep the game self-contained. No audio is needed by the simulation.
 internal sealed class GameAudio : IDisposable

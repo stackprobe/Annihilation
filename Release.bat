@@ -2,9 +2,9 @@
 setlocal
 
 set "ROOT=%~dp0"
-set "SOLUTION=%ROOT%ArtificialInnocence.sln"
-set "GAME_PROJECT=%ROOT%src\ArtificialInnocence.Game\ArtificialInnocence.Game.csproj"
-set "TEST_PROJECT=%ROOT%tests\ArtificialInnocence.Tests\ArtificialInnocence.Tests.csproj"
+set "SOLUTION=%ROOT%Annihilation.sln"
+set "GAME_PROJECT=%ROOT%src\Annihilation.Game\Annihilation.Game.csproj"
+set "TEST_PROJECT=%ROOT%tests\Annihilation.Tests\Annihilation.Tests.csproj"
 set "OUTPUT_DIR=%ROOT%out"
 set "STAGE_DIR=%ROOT%tmp\release-stage"
 

@@ -1,4 +1,4 @@
-﻿# ArtificialInnocence / COUNTERLEARN
+﻿# Annihilation / COUNTERLEARN
 
 [このゲームのコンセプト](spec/このゲームのコンセプト.md) に基づく、一人用の縦スクロールシューティングです。赤い弾を避け、青い弾を吸収して敵の攻撃を学習し、同種の弾をぶつけて対消滅を起こします。
 
@@ -7,8 +7,8 @@ C# / .NET 8 / raylib で実装しています。60秒の道中と複数パター
 ## 起動
 
 1. Visual Studio 2022 の「.NET デスクトップ開発」と .NET 8 SDK を用意します。
-2. このフォルダーの `ArtificialInnocence.sln` を開きます。
-3. `ArtificialInnocence.Game` をスタートアッププロジェクトに設定し、Debug / x64 で F5 を押します。
+2. このフォルダーの `Annihilation.sln` を開きます。
+3. `Annihilation.Game` をスタートアッププロジェクトに設定し、Debug / x64 で F5 を押します。
 4. タイトル画面で Enter を押します。
 
 Windows x64 / OpenGL 3.3 対応環境を対象としています。Raylib-cs の NuGet パッケージにネイティブライブラリが含まれるため、C++ のビルドは不要です。
@@ -69,17 +69,17 @@ NOVA 中は中央の青い連弾を吸収して16発集められます。習得�
 
 ```powershell
 Set-Location C:\home\Dev\RaylibTest20260900\Shooting2
-dotnet build ArtificialInnocence.sln -c Debug
-dotnet run --project src/ArtificialInnocence.Game
-dotnet build ArtificialInnocence.sln -c Release
+dotnet build Annihilation.sln -c Debug
+dotnet run --project src/Annihilation.Game
+dotnet build Annihilation.sln -c Release
 
 # 描画不要の回帰テスト。失敗時は終了コード1。
-dotnet run --project tests/ArtificialInnocence.Tests
+dotnet run --project tests/Annihilation.Tests
 
 # 非表示ウィンドウで実際のゲームを自動操作し、スクリーンショットを保存。
-dotnet run --project src/ArtificialInnocence.Game -- --smoke-test
-dotnet run --project src/ArtificialInnocence.Game -- --smoke-boss
-dotnet run --project src/ArtificialInnocence.Game -- --smoke-title
+dotnet run --project src/Annihilation.Game -- --smoke-test
+dotnet run --project src/Annihilation.Game -- --smoke-boss
+dotnet run --project src/Annihilation.Game -- --smoke-title
 ```
 
 テストは外部フレームワークを使わない23件のコンソールランナーです。`dotnet test` ではなく上記の `dotnet run` を使ってください。
@@ -88,15 +88,15 @@ dotnet run --project src/ArtificialInnocence.Game -- --smoke-title
 
 | ファイル | 役割 |
 | --- | --- |
-| `src/ArtificialInnocence.Core/Entities.cs` | 入力、弾種、敵、演出のデータ |
-| `src/ArtificialInnocence.Core/GameSettings.cs` | 速度、吸収数、威力などの調整値 |
-| `src/ArtificialInnocence.Core/GameWorld.cs` | 移動、吸収、学習、対消滅、ボム、当たり判定 |
-| `src/ArtificialInnocence.Core/GameWorld.Stage.cs` | 道中の配置、敵の挙動、ボスの攻撃パターン |
-| `src/ArtificialInnocence.Game/Program.cs` | 入力、120Hz固定更新、起動・スモーク検証 |
-| `src/ArtificialInnocence.Game/GameRenderer.cs` | ゲーム画面、HUD、操作説明、演出 |
-| `src/ArtificialInnocence.Game/GameAudio.cs` | 外部素材を使わず生成する効果音 |
-| `src/ArtificialInnocence.Game/SmokePilot.cs` | 描画検証用の自動操作 |
-| `tests/ArtificialInnocence.Tests/Program.cs` | ゲームルールと状態遷移の回帰テスト |
+| `src/Annihilation.Core/Entities.cs` | 入力、弾種、敵、演出のデータ |
+| `src/Annihilation.Core/GameSettings.cs` | 速度、吸収数、威力などの調整値 |
+| `src/Annihilation.Core/GameWorld.cs` | 移動、吸収、学習、対消滅、ボム、当たり判定 |
+| `src/Annihilation.Core/GameWorld.Stage.cs` | 道中の配置、敵の挙動、ボスの攻撃パターン |
+| `src/Annihilation.Game/Program.cs` | 入力、120Hz固定更新、起動・スモーク検証 |
+| `src/Annihilation.Game/GameRenderer.cs` | ゲーム画面、HUD、操作説明、演出 |
+| `src/Annihilation.Game/GameAudio.cs` | 外部素材を使わず生成する効果音 |
+| `src/Annihilation.Game/SmokePilot.cs` | 描画検証用の自動操作 |
+| `tests/Annihilation.Tests/Program.cs` | ゲームルールと状態遷移の回帰テスト |
 
 画面は1040×840固定、ゲーム内表示は英語です。効果音は M で切り替えられ、音声デバイスがない場合もゲームを進められます。複数ステージ、セーブ、BGM は含みません。
 

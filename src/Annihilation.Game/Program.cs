@@ -1,13 +1,13 @@
 using System.Numerics;
 using Raylib_cs;
-using ArtificialInnocence.Core;
-using ArtificialInnocence.Game;
+using Annihilation.Core;
+using Annihilation.Game;
 
 bool smokeBoss = args.Contains("--smoke-boss");
 bool smokeTitle = args.Contains("--smoke-title");
 bool smokeTest = smokeBoss || smokeTitle || args.Contains("--smoke-test");
 Raylib.SetConfigFlags(ConfigFlags.Msaa4xHint | (smokeTest ? ConfigFlags.HiddenWindow : 0));
-Raylib.InitWindow(GameSettings.Width, GameSettings.Height, "ArtificialInnocence | COUNTERLEARN");
+Raylib.InitWindow(GameSettings.Width, GameSettings.Height, "Annihilation | COUNTERLEARN");
 Raylib.SetTargetFPS(smokeTest ? 0 : 120);
 int result = 0;
 try

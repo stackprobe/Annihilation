@@ -1,4 +1,4 @@
-namespace ArtificialInnocence.Core;
+namespace Annihilation.Core;
 
 public static class GameSettings
 {

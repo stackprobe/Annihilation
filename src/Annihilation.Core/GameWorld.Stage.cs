@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace ArtificialInnocence.Core;
+namespace Annihilation.Core;
 
 public sealed partial class GameWorld
 {

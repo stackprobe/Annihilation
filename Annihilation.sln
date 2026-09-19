@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtificialInnocence.Game", "src\ArtificialInnocence.Game\ArtificialInnocence.Game.csproj", "{CE8F576B-5267-4B90-9032-E24436CF0AFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Annihilation.Game", "src\Annihilation.Game\Annihilation.Game.csproj", "{CE8F576B-5267-4B90-9032-E24436CF0AFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtificialInnocence.Core", "src\ArtificialInnocence.Core\ArtificialInnocence.Core.csproj", "{58961CAB-2C24-4C96-9EB8-58DF360C71E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Annihilation.Core", "src\Annihilation.Core\Annihilation.Core.csproj", "{58961CAB-2C24-4C96-9EB8-58DF360C71E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtificialInnocence.Tests", "tests\ArtificialInnocence.Tests\ArtificialInnocence.Tests.csproj", "{6C522CA7-91E9-4ACF-81F6-C1B97DEFA572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Annihilation.Tests", "tests\Annihilation.Tests\Annihilation.Tests.csproj", "{6C522CA7-91E9-4ACF-81F6-C1B97DEFA572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

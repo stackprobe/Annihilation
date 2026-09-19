@@ -1,5 +1,5 @@
 using System.Numerics;
-using ArtificialInnocence.Core;
+using Annihilation.Core;
 
 // Dependency-free runner. Tests exercise gameplay through the public simulation API.
 var tests = new (string Name, Action Run)[]
