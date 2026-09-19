@@ -45,6 +45,13 @@ if errorlevel 1 goto :error
 
 COPY README.md "%OUTPUT_DIR%"
 
+MD C:\temp
+C:\Dev\Factory\Tools\RDMD.exe /RM C:\temp\Release
+ROBOCOPY.exe "%OUTPUT_DIR%" C:\temp\Release\Annihilation /MIR
+C:\Dev\Factory\Tools\z7.exe /D C:\temp\Release\Annihilation.zip C:\temp\Release\Annihilation
+C:\app\Annex\SubTools\Dev\RevisionCodeGen.exe * C:\temp\Release
+START C:\temp\Release
+
 echo.
 echo Release completed: "%OUTPUT_DIR%"
 popd
