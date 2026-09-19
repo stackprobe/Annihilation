@@ -43,6 +43,8 @@ if exist "%OUTPUT_DIR%" rmdir /s /q "%OUTPUT_DIR%"
 move "%STAGE_DIR%" "%OUTPUT_DIR%" >nul
 if errorlevel 1 goto :error
 
+COPY README.md "%OUTPUT_DIR%"
+
 echo.
 echo Release completed: "%OUTPUT_DIR%"
 popd
